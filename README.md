@@ -1,4 +1,0 @@
-logparlour
-==========
-
-IRC Log Cleaner.
