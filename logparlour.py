@@ -4,6 +4,7 @@ import os
 from argparse import ArgumentParser
 
 ###File with same name already exists?
+
 def existanceCheck(path, filename):
     name = str(path.split("/")[-1])
     path = path.rstrip(name)
@@ -43,7 +44,6 @@ def logDirectory(path):
     for i in os.listdir(path):
         filepath = path + '/' + i
         parlour(filepath)
-#        os.remove(filepath)
 
 
 if __name__ == "__main__":
@@ -63,4 +63,4 @@ if __name__ == "__main__":
         logDirectory(direcpath)
 
     else:
-        print("Hey, Address of file/directory please...(try -h option for help)")
+        print("Address of file/directory please...(try -h option for help)")
